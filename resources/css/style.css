@@ -1,4 +1,5 @@
-.header {
+/*header*/
+header {
   display: flex;
   align-items: center;
   position: fixed;
@@ -7,15 +8,56 @@
   height: 80px;
   border-bottom: 1px solid black;
   background-color: white;
-  font-family: Verdana;
+  font-family: "verdana"
   font-size: 14px;
   font-weight: bold;
 }
 
 .logo {
-  color: mediumaquamarine;
-  display: block;
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding-left: 30px;
 }
-.nav{
-  display: inline-block;
+.logo img {
+  width: 80px;
+  height: 70px;
+  margin-right: 15px;
+}
+.logo span {
+  color: mediumaquamarine;
+}
+
+header nav {
+  padding-right: 40px;
+}
+
+/* Main content*/
+Content {
+  display: flex;
+  width: 1300px;
+  margin: 0 auto;
+  padding-top: 120px;
+}
+
+div {
+  border: 1px, solid, black;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 33px;
+}
+
+.column .large {
+  width: 630px;
+}
+
+.column .medium {
+  width: 300px;
+}
+
+.column .small {
+  width: 240px;
 }
